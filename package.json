@@ -3,14 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "lib/server/index.js",
-  "directories": {
-    "lib": "lib"
-  },
+  "engines": { "node": "22.x" },
+  "directories": { "lib": "lib" },
   "scripts": {
     "build": "webpack --mode=production",
-    "prestart": "npm run build",
     "start": "node server.js",
-    "start:legacy": "NODE_OPTIONS=--openssl-legacy-provider node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
